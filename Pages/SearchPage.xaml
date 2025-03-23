@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Pages.SearchPage"
+             Shell.NavBarIsVisible="False"
+             xmlns:viewmodel="clr-namespace:Project.ViewModel"
+             xmlns:model="clr-namespace:Project.Model"
+             x:DataType="viewmodel:SearchViewModel"
+             Title="SearchPage">
+        <Shell.BackButtonBehavior>
+                <BackButtonBehavior IsVisible="False"/>
+        </Shell.BackButtonBehavior>
+        <ScrollView>
+                <Grid>
+                        <Image Source="loginbg.png"
+                               Aspect="AspectFill"
+                               Opacity="0.2"></Image>
+                        <HorizontalStackLayout>
+                                <StackLayout Margin="0,50,0,0">
+                                        <Button Text="ลงทะเบียน"
+                                                WidthRequest="200"
+                                                Margin="5"
+                                                BackgroundColor="MediumPurple"></Button>
+                                        <Button Text="ผลการลงทะเบียน"
+                                                WidthRequest="200"
+                                                Margin="5"
+                                                Command="{Binding RegisteredPageCommand}"></Button>
+                                        <Button Text="ถอนวิชาที่ลงทะเบียน"
+                                                WidthRequest="200"
+                                                Margin="5"
+                                                Command="{Binding RemoveClassPageCommand}"></Button>
+                                        <Button Text="โปรไฟล์"
+                                                WidthRequest="200"
+                                                Margin="5"
+                                                Command="{Binding ProfilePageCommand}"></Button>
+                                        <Button Text="ออกจากระบบ"
+                                                Command="{Binding LogoutCommand}"
+                                                WidthRequest="200"
+                                                Margin="20"></Button>
+                                </StackLayout>
+                                <StackLayout Margin="40,55,0,0">
+                                        <HorizontalStackLayout Margin="925,0,0,50">
+                                                <Border StrokeShape="RoundRectangle 15" Padding="15" BackgroundColor="LightSteelBlue">
+                                                        <HorizontalStackLayout Spacing="10">
+                                                                <StackLayout>
+                                                                        <Label Text="{Binding Name}"
+                                                                               FontSize="Small"></Label>
+                                                                        <Label Text="{Binding Uid}"
+                                                                               FontSize="Small"></Label>
+                                                                </StackLayout>
+                                                                <StackLayout VerticalOptions="Center">
+                                                                        <Label Text="{Binding Department}"
+                                                                               FontSize="Small"></Label>
+                                                                        <HorizontalStackLayout Spacing="10">
+                                                                                <Label Text="ปีการศึกษา"
+                                                                                       FontSize="Small"></Label>
+                                                                                <Label Text="{Binding YearOfStudy}"
+                                                                                       FontSize="Small"></Label>
+                                                                        </HorizontalStackLayout>
+                                                                </StackLayout>
+                                                        </HorizontalStackLayout>
+                                                </Border>
+                                        </HorizontalStackLayout>
+                                        <HorizontalStackLayout>
+                                                <StackLayout>
+                                                        <HorizontalStackLayout Spacing="320">
+                                                                <Label Text="ค้นหารายวิชา"
+                                                                       FontSize="Medium"
+                                                                       Margin="0,0,10,0"></Label>
+                                                                <Label Text="ปีการศึกษา"
+                                                                       FontSize="Medium"
+                                                                       Margin="10,7.5,0,0"></Label>
+                                                                <Label Text="เทอม"
+                                                                       FontSize="Medium"
+                                                                       Margin="-160,7.5,10,0"></Label>
+                                                        </HorizontalStackLayout>
+                                                        <HorizontalStackLayout>
+                                                                <Border StrokeShape="RoundRectangle 10"
+                                                                        Margin="0,0,10,0">
+                                                                        <Entry Placeholder="ค้นหารายวิชา..."
+                                                                               WidthRequest="250"
+                                                                               Text="{Binding Search}"></Entry>
+                                                                </Border>
+                                                                <RadioButton Content="ชื่อวิชา"
+                                                                             IsChecked="{Binding SubName, Mode=TwoWay}"
+                                                                             GroupName="Search"/>
+                                                                <RadioButton Content="รหัสวิชา"
+                                                                             Margin="0,0,30,0"
+                                                                             GroupName="Search"/>
+                                                                <BoxView WidthRequest="1"
+                                                                         VerticalOptions="Fill"></BoxView>
+                                                                <HorizontalStackLayout VerticalOptions="Center">
+                                                                        <RadioButton Content="1"
+                                                                                     IsChecked="{Binding Year1, Mode=TwoWay}"
+                                                                                     GroupName="Year"
+                                                                                     Margin="10,0,0,0"/>
+                                                                        <RadioButton Content="2"
+                                                                                     IsChecked="{Binding Year2, Mode=TwoWay}"
+                                                                                     GroupName="Year"/>
+                                                                        <RadioButton Content="3"
+                                                                                     IsChecked="{Binding Year3, Mode=TwoWay}"
+                                                                                     GroupName="Year"/>
+                                                                        <RadioButton Content="4"
+                                                                                     IsChecked="{Binding Year4, Mode=TwoWay}"
+                                                                                     GroupName="Year"/>
+                                                                        <RadioButton Content="ทั้งหมด"
+                                                                                     GroupName="Year"
+                                                                                     IsChecked="True"/>
+                                                                </HorizontalStackLayout>
+                                                                <BoxView WidthRequest="1"
+                                                                         VerticalOptions="Fill"></BoxView>
+                                                                <HorizontalStackLayout>
+                                                                        <RadioButton Content="1"
+                                                                                     IsChecked="{Binding Term1, Mode=TwoWay}"
+                                                                                     GroupName="Term"
+                                                                                     Margin="10,0,0,0"/>
+                                                                        <RadioButton Content="2"
+                                                                                     IsChecked="{Binding Term2, Mode=TwoWay}"
+                                                                                     GroupName="Term"/>
+                                                                        <RadioButton Content="3"
+                                                                                     IsChecked="{Binding Term3, Mode=TwoWay}"
+                                                                                     GroupName="Term"/>
+                                                                        <RadioButton Content="ทั้งหมด"
+                                                                                     GroupName="Term"
+                                                                                     IsChecked="True"/>
+                                                                        <Button Text="ค้นหา"
+                                                                                Command="{Binding SearchNameCommand}"
+                                                                                Margin="30,0,0,0"></Button>
+                                                                </HorizontalStackLayout>
+                                                        </HorizontalStackLayout>
+                                                </StackLayout>
+                                        </HorizontalStackLayout>
+                                        <Border MinimumWidthRequest="1200"
+                                                Margin="0,30,0,0"
+                                                StrokeShape="RoundRectangle 10">
+                                                <StackLayout Margin="20">
+                                                        <CollectionView ItemsSource="{Binding Classes}">
+                                                                <CollectionView.ItemsLayout>
+                                                                        <GridItemsLayout Orientation="Vertical"
+                                                                                         Span="3"></GridItemsLayout>
+                                                                </CollectionView.ItemsLayout>
+                                                                <CollectionView.ItemTemplate>
+                                                                        <DataTemplate x:DataType="{x:Type model:Class}">
+                                                                                <Border Padding="10"
+                                                                                        StrokeShape="RoundRectangle 10">
+                                                                                        <FlexLayout Direction="Row"
+                                                                                                    JustifyContent="SpaceBetween"
+                                                                                                    MinimumWidthRequest="350">
+                                                                                                <VerticalStackLayout>
+                                                                                                        <Label Text="{Binding SubjectName}"></Label>
+                                                                                                        <Label Text="{Binding SubjectId}"></Label>
+                                                                                                        <HorizontalStackLayout Spacing="5">
+                                                                                                                <Label Text="Term:"></Label>
+                                                                                                                <Label Text="{Binding Semester}"></Label>
+                                                                                                                <Label Text="Year:"></Label>
+                                                                                                                <Label Text="{Binding Year}"></Label>
+                                                                                                        </HorizontalStackLayout>
+                                                                                                </VerticalStackLayout>
+                                                                                                <Border StrokeShape="RoundRectangle 10">
+                                                                                                        <ImageButton Source="reg.png"
+                                                                                                                     WidthRequest="40"
+                                                                                                                     Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:SearchViewModel}}, Path=ClassSelectCommand}"
+                                                                                                                     CommandParameter="{Binding SubjectId}"></ImageButton>
+                                                                                                </Border>
+                                                                                        </FlexLayout>
+                                                                                </Border>
+                                                                        </DataTemplate>
+                                                                </CollectionView.ItemTemplate>
+                                                        </CollectionView>
+                                                </StackLayout>
+                                        </Border>
+                                </StackLayout>
+                        </HorizontalStackLayout>
+                </Grid>
+        </ScrollView>
+
+</ContentPage>

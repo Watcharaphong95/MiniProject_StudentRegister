@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Pages.RemoveClassPage"
+             Shell.NavBarIsVisible="False"
+             xmlns:viewmodel="clr-namespace:Project.ViewModel"
+             xmlns:model="clr-namespace:Project1.Model"
+             x:DataType="viewmodel:RemoveClassViewModel"
+             Title="RemoveClassPage">
+        <Shell.BackButtonBehavior>
+                <BackButtonBehavior IsVisible="False"/>
+        </Shell.BackButtonBehavior>
+        <Grid>
+                <Image Source="loginbg.png"
+                       Aspect="AspectFill"
+                       Opacity="0.2"></Image>
+                <HorizontalStackLayout>
+                        <StackLayout Margin="0,50,0,0">
+                                <Button Text="ลงทะเบียน"
+                                        WidthRequest="200"
+                                        Margin="5"
+                                        Command="{Binding SearchPageCommand}"></Button>
+                                <Button Text="ผลการลงทะเบียน"
+                                        WidthRequest="200"
+                                        Margin="5"
+                                        Command="{Binding RegisteredPageCommand}"></Button>
+                                <Button Text="ถอนวิชาที่ลงทะเบียน"
+                                        WidthRequest="200"
+                                        Margin="5"
+                                        BackgroundColor="MediumPurple"></Button>
+                                <Button Text="โปรไฟล์"
+                                        WidthRequest="200"
+                                        Margin="5"
+                                        Command="{Binding ProfilePageCommand}"></Button>
+                                <Button Text="ออกจากระบบ"
+                                        Command="{Binding LogoutCommand}"
+                                        WidthRequest="200"
+                                        Margin="20"></Button>
+                        </StackLayout>
+                        <StackLayout>
+                                <HorizontalStackLayout Margin="925,50,0,0">
+                                                <Border StrokeShape="RoundRectangle 15" Padding="15" BackgroundColor="LightSteelBlue">
+                                                        <HorizontalStackLayout Spacing="10">
+                                                                <StackLayout>
+                                                                        <Label Text="{Binding Name}"
+                                                                               FontSize="Small"></Label>
+                                                                        <Label Text="{Binding Uid}"
+                                                                               FontSize="Small"></Label>
+                                                                </StackLayout>
+                                                                <StackLayout VerticalOptions="Center">
+                                                                        <Label Text="{Binding Department}"
+                                                                               FontSize="Small"></Label>
+                                                                        <HorizontalStackLayout Spacing="10">
+                                                                                <Label Text="ปีการศึกษา"
+                                                                                       FontSize="Small"></Label>
+                                                                                <Label Text="{Binding YearOfStudy}"
+                                                                                       FontSize="Small"></Label>
+                                                                        </HorizontalStackLayout>
+                                                                </StackLayout>
+                                                        </HorizontalStackLayout>
+                                                </Border>
+                                        </HorizontalStackLayout>
+                                <HorizontalStackLayout Margin="40,55,0,0">
+                                        <Label Text="ปีการศึกษา"
+                                               FontSize="Medium"></Label>
+                                        <Picker
+                                                BackgroundColor="grey"
+                                                SelectedItem="{Binding Year}"
+                                                SelectedIndexChanged="Picker_SelectedIndexChanged">
+                                                <Picker.ItemsSource>
+                                                        <x:Array Type="{x:Type x:String}">
+                                                                <x:String>1</x:String>
+                                                                <x:String>2</x:String>
+                                                                <x:String>3</x:String>
+                                                                <x:String>4</x:String>
+                                                        </x:Array>
+                                                </Picker.ItemsSource>
+                                        </Picker>
+                                        <Label Text="เทอม"
+                                               FontSize="Medium"
+                                               Margin="50,0,0,0"></Label>
+                                        <Picker
+                                                BackgroundColor="grey"
+                                                SelectedItem="{Binding Semester}"
+                                                SelectedIndexChanged="Picker_SelectedIndexChanged">
+                                                <Picker.ItemsSource>
+                                                        <x:Array Type="{x:Type x:String}">
+                                                                <x:String>1</x:String>
+                                                                <x:String>2</x:String>
+                                                                <x:String>3</x:String>
+                                                        </x:Array>
+                                                </Picker.ItemsSource>
+                                        </Picker>
+                                </HorizontalStackLayout>
+                                <Border MinimumWidthRequest="1200"
+                                        Margin="0,30,0,0"
+                                        StrokeShape="RoundRectangle 10">
+                                        <StackLayout Margin="20">
+                                                <CollectionView ItemsSource="{Binding Registers}">
+                                                        <CollectionView.ItemsLayout>
+                                                                <GridItemsLayout Orientation="Vertical"
+                                                                                 Span="3"></GridItemsLayout>
+                                                        </CollectionView.ItemsLayout>
+                                                        <CollectionView.ItemTemplate>
+                                                                <DataTemplate x:DataType="{x:Type model:Registered}">
+                                                                        <Border Padding="10"
+                                                                                StrokeShape="RoundRectangle 10">
+                                                                                <FlexLayout Direction="Row"
+                                                                                            JustifyContent="SpaceBetween"
+                                                                                            MinimumWidthRequest="350">
+                                                                                        <VerticalStackLayout>
+                                                                                                <Label Text="{Binding SubjectName}"></Label>
+                                                                                                <Label Text="{Binding SubjectId}"></Label>
+                                                                                                <HorizontalStackLayout Spacing="5">
+                                                                                                        <Label Text="Term:"></Label>
+                                                                                                        <Label Text="{Binding Semester}"></Label>
+                                                                                                        <Label Text="Grade:"></Label>
+                                                                                                        <Label Text="{Binding Grade, TargetNullValue='?'}"/>
+                                                                                                </HorizontalStackLayout>
+                                                                                        </VerticalStackLayout>
+                                                                                        <Border StrokeShape="RoundRectangle 10"
+                                                                                                WidthRequest="50">
+                                                                                                <ImageButton Source="delete.png"
+                                                                                                                WidthRequest="40"
+                                                                                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:RemoveClassViewModel}}, Path=RemoveSelectCommand}"
+                                                                                                             CommandParameter="{Binding SubjectId}"></ImageButton>
+                                                                                        </Border>
+                                                                                </FlexLayout>
+                                                                        </Border>
+                                                                </DataTemplate>
+                                                        </CollectionView.ItemTemplate>
+                                                </CollectionView>
+                                        </StackLayout>
+                                </Border>
+                        </StackLayout>
+                </HorizontalStackLayout>
+        </Grid>
+</ContentPage>

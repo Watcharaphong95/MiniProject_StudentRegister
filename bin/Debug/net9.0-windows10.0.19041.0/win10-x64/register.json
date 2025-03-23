@@ -1,0 +1,422 @@
+[
+    {
+        "semester": "1",
+        "year": "1",
+        "subjectName": "Mathematics I",
+        "subjectID": "100101",
+        "grade": "A"
+    },
+    {
+        "semester": "1",
+        "year": "1",
+        "subjectName": "Physics I",
+        "subjectID": "200101",
+        "grade": "B"
+    },
+    {
+        "semester": "1",
+        "year": "1",
+        "subjectName": "Chemistry I",
+        "subjectID": "300101",
+        "grade": "C"
+    },
+    {
+        "semester": "1",
+        "year": "1",
+        "subjectName": "Biology I",
+        "subjectID": "400101",
+        "grade": "A"
+    },
+    {
+        "semester": "1",
+        "year": "1",
+        "subjectName": "English I",
+        "subjectID": "500101",
+        "grade": "B"
+    },
+    {
+        "semester": "2",
+        "year": "1",
+        "subjectName": "Mathematics II",
+        "subjectID": "100102",
+        "grade": "C"
+    },
+    {
+        "semester": "2",
+        "year": "1",
+        "subjectName": "Physics II",
+        "subjectID": "200102",
+        "grade": "A"
+    },
+    {
+        "semester": "2",
+        "year": "1",
+        "subjectName": "Chemistry II",
+        "subjectID": "300102",
+        "grade": "B"
+    },
+    {
+        "semester": "2",
+        "year": "1",
+        "subjectName": "Biology II",
+        "subjectID": "400102",
+        "grade": "D"
+    },
+    {
+        "semester": "2",
+        "year": "1",
+        "subjectName": "English II",
+        "subjectID": "500102",
+        "grade": "A"
+    },
+    {
+        "semester": "3",
+        "year": "1",
+        "subjectName": "Mathematics III",
+        "subjectID": "100103",
+        "grade": "B"
+    },
+    {
+        "semester": "3",
+        "year": "1",
+        "subjectName": "Physics III",
+        "subjectID": "200103",
+        "grade": "C"
+    },
+    {
+        "semester": "3",
+        "year": "1",
+        "subjectName": "Chemistry III",
+        "subjectID": "300103",
+        "grade": "A"
+    },
+    {
+        "semester": "3",
+        "year": "1",
+        "subjectName": "Biology III",
+        "subjectID": "400103",
+        "grade": "B"
+    },
+    {
+        "semester": "3",
+        "year": "1",
+        "subjectName": "English III",
+        "subjectID": "500103",
+        "grade": "C"
+    },
+    {
+        "semester": "1",
+        "year": "2",
+        "subjectName": "Mathematics IV",
+        "subjectID": "100201",
+        "grade": "A"
+    },
+    {
+        "semester": "1",
+        "year": "2",
+        "subjectName": "Physics IV",
+        "subjectID": "200201",
+        "grade": "B"
+    },
+    {
+        "semester": "1",
+        "year": "2",
+        "subjectName": "Chemistry IV",
+        "subjectID": "300201",
+        "grade": "C"
+    },
+    {
+        "semester": "1",
+        "year": "2",
+        "subjectName": "Biology IV",
+        "subjectID": "400201",
+        "grade": "A"
+    },
+    {
+        "semester": "1",
+        "year": "2",
+        "subjectName": "English IV",
+        "subjectID": "500201",
+        "grade": "D"
+    },
+    {
+        "semester": "2",
+        "year": "2",
+        "subjectName": "Mathematics V",
+        "subjectID": "100202",
+        "grade": "B"
+    },
+    {
+        "semester": "2",
+        "year": "2",
+        "subjectName": "Physics V",
+        "subjectID": "200202",
+        "grade": "C"
+    },
+    {
+        "semester": "2",
+        "year": "2",
+        "subjectName": "Chemistry V",
+        "subjectID": "300202",
+        "grade": "A"
+    },
+    {
+        "semester": "2",
+        "year": "2",
+        "subjectName": "Biology V",
+        "subjectID": "400202",
+        "grade": "B"
+    },
+    {
+        "semester": "2",
+        "year": "2",
+        "subjectName": "English V",
+        "subjectID": "500202",
+        "grade": "C"
+    },
+    {
+        "semester": "3",
+        "year": "2",
+        "subjectName": "Mathematics VI",
+        "subjectID": "100203",
+        "grade": "A"
+    },
+    {
+        "semester": "3",
+        "year": "2",
+        "subjectName": "Physics VI",
+        "subjectID": "200203",
+        "grade": "B"
+    },
+    {
+        "semester": "3",
+        "year": "2",
+        "subjectName": "Chemistry VI",
+        "subjectID": "300203",
+        "grade": "C"
+    },
+    {
+        "semester": "3",
+        "year": "2",
+        "subjectName": "Biology VI",
+        "subjectID": "400203",
+        "grade": "A"
+    },
+    {
+        "semester": "3",
+        "year": "2",
+        "subjectName": "English VI",
+        "subjectID": "500203",
+        "grade": "D"
+    },
+    {
+        "semester": "1",
+        "year": "3",
+        "subjectName": "Mathematics VII",
+        "subjectID": "100301",
+        "grade": "B"
+    },
+    {
+        "semester": "1",
+        "year": "3",
+        "subjectName": "Physics VII",
+        "subjectID": "200301",
+        "grade": "C"
+    },
+    {
+        "semester": "1",
+        "year": "3",
+        "subjectName": "Chemistry VII",
+        "subjectID": "300301",
+        "grade": "A"
+    },
+    {
+        "semester": "1",
+        "year": "3",
+        "subjectName": "Biology VII",
+        "subjectID": "400301",
+        "grade": "B"
+    },
+    {
+        "semester": "1",
+        "year": "3",
+        "subjectName": "English VII",
+        "subjectID": "500301",
+        "grade": "C"
+    },
+    {
+        "semester": "2",
+        "year": "3",
+        "subjectName": "Mathematics VIII",
+        "subjectID": "100302",
+        "grade": "A"
+    },
+    {
+        "semester": "2",
+        "year": "3",
+        "subjectName": "Physics VIII",
+        "subjectID": "200302",
+        "grade": "B"
+    },
+    {
+        "semester": "2",
+        "year": "3",
+        "subjectName": "Chemistry VIII",
+        "subjectID": "300302",
+        "grade": "C"
+    },
+    {
+        "semester": "2",
+        "year": "3",
+        "subjectName": "Biology VIII",
+        "subjectID": "400302",
+        "grade": "A"
+    },
+    {
+        "semester": "2",
+        "year": "3",
+        "subjectName": "English VIII",
+        "subjectID": "500302",
+        "grade": "D"
+    },
+    {
+        "semester": "3",
+        "year": "3",
+        "subjectName": "Mathematics IX",
+        "subjectID": "100303",
+        "grade": "B"
+    },
+    {
+        "semester": "3",
+        "year": "3",
+        "subjectName": "Physics IX",
+        "subjectID": "200303",
+        "grade": "C"
+    },
+    {
+        "semester": "3",
+        "year": "3",
+        "subjectName": "Chemistry IX",
+        "subjectID": "300303",
+        "grade": "A"
+    },
+    {
+        "semester": "3",
+        "year": "3",
+        "subjectName": "Biology IX",
+        "subjectID": "400303",
+        "grade": "B"
+    },
+    {
+        "semester": "3",
+        "year": "3",
+        "subjectName": "English IX",
+        "subjectID": "500303",
+        "grade": "C"
+    },
+    {
+        "semester": "1",
+        "year": "4",
+        "subjectName": "Advanced Mathematics",
+        "subjectID": "100401",
+        "grade": "A"
+    },
+    {
+        "semester": "1",
+        "year": "4",
+        "subjectName": "Advanced Physics",
+        "subjectID": "200401",
+        "grade": "B"
+    },
+    {
+        "semester": "1",
+        "year": "4",
+        "subjectName": "Advanced Chemistry",
+        "subjectID": "300401",
+        "grade": "C"
+    },
+    {
+        "semester": "1",
+        "year": "4",
+        "subjectName": "Advanced Biology",
+        "subjectID": "400401",
+        "grade": "A"
+    },
+    {
+        "semester": "1",
+        "year": "4",
+        "subjectName": "Advanced English",
+        "subjectID": "500401",
+        "grade": "D"
+    },
+    {
+        "semester": "2",
+        "year": "4",
+        "subjectName": "Advanced Mathematics II",
+        "subjectID": "100402",
+        "grade": "B"
+    },
+    {
+        "semester": "2",
+        "year": "4",
+        "subjectName": "Advanced Physics II",
+        "subjectID": "200402",
+        "grade": "C"
+    },
+    {
+        "semester": "2",
+        "year": "4",
+        "subjectName": "Advanced Chemistry II",
+        "subjectID": "300402",
+        "grade": "A"
+    },
+    {
+        "semester": "2",
+        "year": "4",
+        "subjectName": "Advanced Biology II",
+        "subjectID": "400402",
+        "grade": "B"
+    },
+    {
+        "semester": "2",
+        "year": "4",
+        "subjectName": "Advanced English II",
+        "subjectID": "500402",
+        "grade": "C"
+    },
+    {
+        "semester": "3",
+        "year": "4",
+        "subjectName": "Advanced Mathematics III",
+        "subjectID": "100403",
+        "grade": "A"
+    },
+    {
+        "semester": "3",
+        "year": "4",
+        "subjectName": "Advanced Physics III",
+        "subjectID": "200403",
+        "grade": "B"
+    },
+    {
+        "semester": "3",
+        "year": "4",
+        "subjectName": "Advanced Chemistry III",
+        "subjectID": "300403",
+        "grade": "C"
+    },
+    {
+        "semester": "3",
+        "year": "4",
+        "subjectName": "Advanced Biology III",
+        "subjectID": "400403",
+        "grade": "A"
+    },
+    {
+        "semester": "3",
+        "year": "4",
+        "subjectName": "Advanced English III",
+        "subjectID": "500403",
+        "grade": "D"
+    }
+]

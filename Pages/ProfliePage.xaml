@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Pages.ProfliePage"
+             Shell.NavBarIsVisible="False"
+             xmlns:viewmodel="clr-namespace:Project.ViewModel"
+             xmlns:model="clr-namespace:Project.Model"
+             x:DataType="viewmodel:ProfileViewModel"
+             Title="ProfliePage">
+        <Shell.BackButtonBehavior>
+                <BackButtonBehavior IsVisible="False"/>
+        </Shell.BackButtonBehavior>
+        <Grid>
+                <Image Source="loginbg.png"
+                       Aspect="AspectFill"
+                       Opacity="0.2"></Image>
+                <HorizontalStackLayout>
+                        <StackLayout Margin="0,50,0,0">
+                                <Button Text="ลงทะเบียน"
+                                        WidthRequest="200"
+                                        Margin="5"
+                                        Command="{Binding SearchPageCommand}"></Button>
+                                <Button Text="ผลการลงทะเบียน"
+                                        WidthRequest="200"
+                                        Margin="5"
+                                        Command="{Binding RegisteredPageCommand}"></Button>
+                                <Button Text="ถอนวิชาที่ลงทะเบียน"
+                                        WidthRequest="200"
+                                        Margin="5"
+                                        Command="{Binding RemoveClassPageCommand}"></Button>
+                                <Button Text="โปรไฟล์"
+                                        WidthRequest="200"
+                                        Margin="5"
+                                        BackgroundColor="MediumPurple"></Button>
+                                <Button Text="ออกจากระบบ"
+                                        Command="{Binding LogoutCommand}"
+                                        WidthRequest="200"
+                                        Margin="20"></Button>
+                        </StackLayout>
+                        <Border StrokeShape="RoundRectangle 15"
+                                Margin="0,55,0,55"
+                                Padding="0,0,100,0">
+                                <HorizontalStackLayout>
+                                        <StackLayout>
+                                                <Border StrokeShape="RoundRectangle 10"
+                                                        Margin="10">
+                                                        <Image Source="logo.png"
+                                                               WidthRequest="250"></Image>
+                                                </Border>
+                                        </StackLayout>
+                                        <BoxView WidthRequest="1"
+                                                 VerticalOptions="Fill"
+                                                 Opacity="0.2"></BoxView>
+                                        <HorizontalStackLayout Spacing="50"
+                                                               Margin="30,20,0,0">
+                                                <StackLayout Spacing="30">
+                                                        <StackLayout>
+                                                                <Label Text="รหัสประจำตัว"
+                                                                       FontSize="Medium"></Label>
+                                                                <Border StrokeShape="RoundRectangle 10" Padding="10">
+                                                                        <Label Text="{Binding Uid}"
+                                                                               FontSize="Small"></Label>
+                                                                </Border>
+                                                        </StackLayout>
+                                                        <StackLayout>
+                                                                <Label Text="ระดับชั้นปี"
+                                                                       FontSize="Medium"></Label>
+                                                                <Border StrokeShape="RoundRectangle 10" Padding="10">
+                                                                        <Label Text="{Binding YearStd}"
+                                                                               FontSize="Small"></Label>
+                                                                </Border>
+                                                        </StackLayout>
+                                                        <StackLayout>
+                                                                <Label Text="E-mail"
+                                                                       FontSize="Medium"></Label>
+                                                                <Border StrokeShape="RoundRectangle 10" Padding="10">
+                                                                        <Label Text="{Binding Mail}"
+                                                                               FontSize="Small"></Label>
+                                                                </Border>
+                                                        </StackLayout>
+                                                        <StackLayout>
+                                                                <Label Text="ที่อยู่"
+                                                                       FontSize="Medium"></Label>
+                                                                <Border StrokeShape="RoundRectangle 10" Padding="10">
+                                                                        <Label Text="{Binding Addre}"
+                                                                               FontSize="Small"></Label>
+                                                                </Border>
+                                                        </StackLayout>
+                                                </StackLayout>
+                                                <StackLayout  Spacing="30">
+                                                        <StackLayout>
+                                                                <Label Text="ชื่อ"
+                                                                       FontSize="Medium"></Label>
+                                                                <Border StrokeShape="RoundRectangle 10" Padding="10">
+                                                                        <Label Text="{Binding Name}"
+                                                                               FontSize="Small"></Label>
+                                                                </Border>
+                                                        </StackLayout>
+                                                        <StackLayout>
+                                                                <Label Text="ภาควิชา"
+                                                                       FontSize="Medium"></Label>
+                                                                <Border StrokeShape="RoundRectangle 10" Padding="10">
+                                                                        <Label Text="{Binding Depart}"
+                                                                               FontSize="Small"></Label>
+                                                                </Border>
+                                                        </StackLayout>
+                                                        <StackLayout>
+                                                                <Label Text="เบอร์โทรติดต่อ"
+                                                                       FontSize="Medium"></Label>
+                                                                <Border StrokeShape="RoundRectangle 10" Padding="10">
+                                                                        <Label Text="{Binding Phone}"
+                                                                               FontSize="Small"></Label>
+                                                                </Border>
+                                                        </StackLayout>
+                                                </StackLayout>
+                                                <StackLayout>
+                                                        <StackLayout>
+                                                                <Label Text="เพศ"
+                                                                       FontSize="Medium"></Label>
+                                                                <Border StrokeShape="RoundRectangle 10" Padding="10">
+                                                                        <Label Text="{Binding Gender}"
+                                                                               FontSize="Small"></Label>
+                                                                </Border>
+                                                        </StackLayout>
+                                                </StackLayout>
+                                        </HorizontalStackLayout>
+                                </HorizontalStackLayout>
+                        </Border>
+                </HorizontalStackLayout>
+        </Grid>
+</ContentPage>

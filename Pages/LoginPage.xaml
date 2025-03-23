@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Pages.LoginPage"
+             Shell.NavBarIsVisible="False"
+             xmlns:viewmodel="clr-namespace:Project.ViewModel"
+             xmlns:model="clr-namespace:Project2.Model"
+             x:DataType="viewmodel:LoginViewModel"
+             Title="LoginPage">
+    <Grid>
+        <Image Source="loginbg.png" Aspect="AspectFill"></Image>
+        <VerticalStackLayout VerticalOptions="Center"
+                             HorizontalOptions="Center">
+            <Border StrokeShape="RoundRectangle 40"
+                    Padding="15"
+                    BackgroundColor="white">
+                <StackLayout HorizontalOptions="Center"
+                             VerticalOptions="Center">
+                    <Image Source="logo.png"
+                           HeightRequest="150"
+                           WidthRequest="150"/>
+                    <Label HorizontalOptions="Center" Padding="10" FontSize="Title" Text="Dino University"/>
+                    <Label HorizontalOptions="Center" Padding="10" FontSize="Subtitle" Text="Welcome! Please log in to continue"/>
+                    <StackLayout>
+                        <Label Text="Email"></Label>
+                        <Border StrokeShape="RoundRectangle 10">
+                            <Entry Placeholder="Email..." Text="{Binding Username}"></Entry>
+                        </Border>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="Password"></Label> 
+                        <Border StrokeShape="RoundRectangle 10">
+                            <Entry IsPassword="True" Placeholder="Password..." Text="{Binding Password}"></Entry>
+                        </Border>
+                    </StackLayout>
+                    <Button Text="Login" Margin="15" WidthRequest="200" Command="{Binding LoginCommand}"></Button>
+                </StackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </Grid>
+
+
+</ContentPage>

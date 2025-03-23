@@ -1,0 +1,218 @@
+[
+    {
+        "semester": "1",
+        "year": "1",
+        "subjectName": "Computer Science I",
+        "subjectID": "600101"
+    },
+    {
+        "semester": "1",
+        "year": "1",
+        "subjectName": "History I",
+        "subjectID": "700101"
+    },
+    {
+        "semester": "1",
+        "year": "1",
+        "subjectName": "Economics I",
+        "subjectID": "800101"
+    },
+    {
+        "semester": "2",
+        "year": "1",
+        "subjectName": "Computer Science II",
+        "subjectID": "600102"
+    },
+    {
+        "semester": "2",
+        "year": "1",
+        "subjectName": "History II",
+        "subjectID": "700102"
+    },
+    {
+        "semester": "2",
+        "year": "1",
+        "subjectName": "Economics II",
+        "subjectID": "800102"
+    },
+    {
+        "semester": "3",
+        "year": "1",
+        "subjectName": "Computer Science III",
+        "subjectID": "600103"
+    },
+    {
+        "semester": "3",
+        "year": "1",
+        "subjectName": "History III",
+        "subjectID": "700103"
+    },
+    {
+        "semester": "3",
+        "year": "1",
+        "subjectName": "Economics III",
+        "subjectID": "800103"
+    },
+    {
+        "semester": "1",
+        "year": "2",
+        "subjectName": "Computer Science IV",
+        "subjectID": "600201"
+    },
+    {
+        "semester": "1",
+        "year": "2",
+        "subjectName": "History IV",
+        "subjectID": "700201"
+    },
+    {
+        "semester": "1",
+        "year": "2",
+        "subjectName": "Economics IV",
+        "subjectID": "800201"
+    },
+    {
+        "semester": "2",
+        "year": "2",
+        "subjectName": "Computer Science V",
+        "subjectID": "600202"
+    },
+    {
+        "semester": "2",
+        "year": "2",
+        "subjectName": "History V",
+        "subjectID": "700202"
+    },
+    {
+        "semester": "2",
+        "year": "2",
+        "subjectName": "Economics V",
+        "subjectID": "800202"
+    },
+    {
+        "semester": "3",
+        "year": "2",
+        "subjectName": "Computer Science VI",
+        "subjectID": "600203"
+    },
+    {
+        "semester": "3",
+        "year": "2",
+        "subjectName": "History VI",
+        "subjectID": "700203"
+    },
+    {
+        "semester": "3",
+        "year": "2",
+        "subjectName": "Economics VI",
+        "subjectID": "800203"
+    },
+    {
+        "semester": "1",
+        "year": "3",
+        "subjectName": "Computer Science VII",
+        "subjectID": "600301"
+    },
+    {
+        "semester": "1",
+        "year": "3",
+        "subjectName": "History VII",
+        "subjectID": "700301"
+    },
+    {
+        "semester": "1",
+        "year": "3",
+        "subjectName": "Economics VII",
+        "subjectID": "800301"
+    },
+    {
+        "semester": "2",
+        "year": "3",
+        "subjectName": "Computer Science VIII",
+        "subjectID": "600302"
+    },
+    {
+        "semester": "2",
+        "year": "3",
+        "subjectName": "History VIII",
+        "subjectID": "700302"
+    },
+    {
+        "semester": "2",
+        "year": "3",
+        "subjectName": "Economics VIII",
+        "subjectID": "800302"
+    },
+    {
+        "semester": "3",
+        "year": "3",
+        "subjectName": "Computer Science IX",
+        "subjectID": "600303"
+    },
+    {
+        "semester": "3",
+        "year": "3",
+        "subjectName": "History IX",
+        "subjectID": "700303"
+    },
+    {
+        "semester": "3",
+        "year": "3",
+        "subjectName": "Economics IX",
+        "subjectID": "800303"
+    },
+    {
+        "semester": "1",
+        "year": "4",
+        "subjectName": "Advanced Computer Science",
+        "subjectID": "600401"
+    },
+    {
+        "semester": "1",
+        "year": "4",
+        "subjectName": "Advanced History",
+        "subjectID": "700401"
+    },
+    {
+        "semester": "1",
+        "year": "4",
+        "subjectName": "Advanced Economics",
+        "subjectID": "800401"
+    },
+    {
+        "semester": "2",
+        "year": "4",
+        "subjectName": "Advanced Computer Science II",
+        "subjectID": "600402"
+    },
+    {
+        "semester": "2",
+        "year": "4",
+        "subjectName": "Advanced History II",
+        "subjectID": "700402"
+    },
+    {
+        "semester": "2",
+        "year": "4",
+        "subjectName": "Advanced Economics II",
+        "subjectID": "800402"
+    },
+    {
+        "semester": "3",
+        "year": "4",
+        "subjectName": "Advanced Computer Science III",
+        "subjectID": "600403"
+    },
+    {
+        "semester": "3",
+        "year": "4",
+        "subjectName": "Advanced History III",
+        "subjectID": "700403"
+    },
+    {
+        "semester": "3",
+        "year": "4",
+        "subjectName": "Advanced Economics III",
+        "subjectID": "800403"
+    }
+]
