@@ -34,39 +34,34 @@ public partial class LoginViewModel : ObservableObject
 	[RelayCommand]
 	async Task Login()
 	{
-		foreach (var item in Users)
+		var user = Users.FirstOrDefault(item => item.Email == Username);
+
+		if (user == null)
 		{
-			if (item.Email == Username)
-			{
-				if (item.Password == Password)
-				{
-					if (Shell.Current != null)
-					{
-						getUser();
-						getUserData();
-						await Shell.Current.GoToAsync("search");
-						break;
-					}
-				}
-				else
-				{
-					await Application.Current.MainPage.DisplayAlert(
-		 "กรุณาลองใหม่อีกครั้ง?",
-		 $"รหัสผ่านไม่ถูกต้อง",
-		 "ตกลง");
-					break;
-				}
-			}
-			else
-			{
-				await Application.Current.MainPage.DisplayAlert(
-		 "กรุณาลองใหม่อีกครั้ง?",
-		 $"อีเมลนี้ไม่มีอยู่ในระบบ",
-		 "ตกลง");
-				break;
-			}
+			await Application.Current.MainPage.DisplayAlert(
+				"กรุณาลองใหม่อีกครั้ง?",
+				"อีเมลนี้ไม่มีอยู่ในระบบ",
+				"ตกลง");
+			return;
+		}
+
+		if (user.Password != Password)
+		{
+			await Application.Current.MainPage.DisplayAlert(
+				"กรุณาลองใหม่อีกครั้ง?",
+				"รหัสผ่านไม่ถูกต้อง",
+				"ตกลง");
+			return;
+		}
+
+		if (Shell.Current != null)
+		{
+			getUser();
+			getUserData();
+			await Shell.Current.GoToAsync("search");
 		}
 	}
+
 
 	[ObservableProperty]
 	ObservableCollection<UsersData> users = new ObservableCollection<UsersData>();

@@ -7,37 +7,93 @@
              xmlns:model="clr-namespace:Project2.Model"
              x:DataType="viewmodel:LoginViewModel"
              Title="LoginPage">
+    
     <Grid>
-        <Image Source="loginbg.png" Aspect="AspectFill"></Image>
-        <VerticalStackLayout VerticalOptions="Center"
-                             HorizontalOptions="Center">
-            <Border StrokeShape="RoundRectangle 40"
-                    Padding="15"
-                    BackgroundColor="white">
-                <StackLayout HorizontalOptions="Center"
-                             VerticalOptions="Center">
-                    <Image Source="logo.png"
-                           HeightRequest="150"
-                           WidthRequest="150"/>
-                    <Label HorizontalOptions="Center" Padding="10" FontSize="Title" Text="Dino University"/>
-                    <Label HorizontalOptions="Center" Padding="10" FontSize="Subtitle" Text="Welcome! Please log in to continue"/>
-                    <StackLayout>
-                        <Label Text="Email"></Label>
-                        <Border StrokeShape="RoundRectangle 10">
-                            <Entry Placeholder="Email..." Text="{Binding Username}"></Entry>
-                        </Border>
-                    </StackLayout>
-                    <StackLayout>
-                        <Label Text="Password"></Label> 
-                        <Border StrokeShape="RoundRectangle 10">
-                            <Entry IsPassword="True" Placeholder="Password..." Text="{Binding Password}"></Entry>
-                        </Border>
-                    </StackLayout>
-                    <Button Text="Login" Margin="15" WidthRequest="200" Command="{Binding LoginCommand}"></Button>
-                </StackLayout>
-            </Border>
-        </VerticalStackLayout>
+        <!-- Background Image -->
+        <Image Source="loginbg.png" Aspect="AspectFill"/>
+        
+        <!-- Login Card -->
+        <Border StrokeShape="RoundRectangle 40"
+                Padding="30,40"
+                BackgroundColor="White"
+                Stroke="#E0E0E0"
+                StrokeThickness="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="350">
+                
+            <VerticalStackLayout Spacing="20">
+                <!-- Logo and Header -->
+                <Image Source="logo.png"
+                       HeightRequest="120"
+                       WidthRequest="120"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,10"/>
+                       
+                <Label Text="Dino University"
+                       HorizontalOptions="Center"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       TextColor="#333333"/>
+                       
+                <Label Text="Welcome! Please log in to continue"
+                       HorizontalOptions="Center"
+                       FontSize="16"
+                       TextColor="#666666"
+                       Margin="0,0,0,15"/>
+                
+                <!-- Email Field -->
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Email"
+                           FontSize="14"
+                           FontAttributes="Bold"
+                           TextColor="#444444"/>
+                           
+                    <Border StrokeShape="RoundRectangle 12"
+                            Stroke="#E0E0E0"
+                            StrokeThickness="1"
+                            Padding="5,0">
+                            
+                        <Entry Placeholder="Enter your email address"
+                               Text="{Binding Username}"
+                               PlaceholderColor="#AAAAAA"
+                               HeightRequest="50"
+                               VerticalOptions="Center"/>
+                    </Border>
+                </VerticalStackLayout>
+                
+                <!-- Password Field -->
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Password"
+                           FontSize="14"
+                           FontAttributes="Bold"
+                           TextColor="#444444"/>
+                           
+                    <Border StrokeShape="RoundRectangle 12"
+                            Stroke="#E0E0E0"
+                            StrokeThickness="1"
+                            Padding="5,0">
+                            
+                        <Entry IsPassword="True"
+                               Placeholder="Enter your password"
+                               Text="{Binding Password}"
+                               PlaceholderColor="#AAAAAA"
+                               HeightRequest="50"
+                               VerticalOptions="Center"/>
+                    </Border>
+                </VerticalStackLayout>
+                
+                <!-- Login Button -->
+                <Button Text="Log In"
+                        Command="{Binding LoginCommand}"
+                        BackgroundColor="#4CAF50"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        CornerRadius="12"
+                        HeightRequest="50"
+                        Margin="0,15,0,5"/>
+            </VerticalStackLayout>
+        </Border>
     </Grid>
-
-
 </ContentPage>

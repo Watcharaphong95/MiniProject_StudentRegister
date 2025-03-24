@@ -1,0 +1,12 @@
+D:\Work\1204433 Cross Platform\Mini_Project\Project\obj\Release\net9.0-windows10.0.19041.0\win10-x64\Project.csproj.AssemblyReference.cache
+D:\Work\1204433 Cross Platform\Mini_Project\Project\obj\Release\net9.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+D:\Work\1204433 Cross Platform\Mini_Project\Project\obj\Release\net9.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+D:\Work\1204433 Cross Platform\Mini_Project\Project\obj\Release\net9.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+D:\Work\1204433 Cross Platform\Mini_Project\Project\obj\Release\net9.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+D:\Work\1204433 Cross Platform\Mini_Project\Project\obj\Release\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+D:\Work\1204433 Cross Platform\Mini_Project\Project\obj\Release\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+D:\Work\1204433 Cross Platform\Mini_Project\Project\obj\Release\net9.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+D:\Work\1204433 Cross Platform\Mini_Project\Project\obj\Release\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+D:\Work\1204433 Cross Platform\Mini_Project\Project\obj\Release\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+D:\Work\1204433 Cross Platform\Mini_Project\Project\obj\Release\net9.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+D:\Work\1204433 Cross Platform\Mini_Project\Project\obj\Release\net9.0-windows10.0.19041.0\win10-x64\Project.GeneratedMSBuildEditorConfig.editorconfig
